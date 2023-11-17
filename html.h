@@ -16,10 +16,11 @@ R"=====(
    <body>
       <div class=\"container\">
          <div class=\"row\">
-            <h1>ESP Color Picker</h1>
+            <h1>LED strip control</h1>
          </div>
          <a class=\"btn btn-primary btn-lg\" href=\"#\" id=\"change_color\" role=\"button\">Change Color</a> 
-         <input class=\"jscolor {onFineChange:'update(this)'}\" id=\"rgb\">
+         <input class=\"color\" id=\"color_selector\">
+         <input type="range" id="brightness-slider" "name="Brightness" min="0" max="255">
       </div>
       <script>function update(picker) {document.getElementById('rgb').innerHTML = Math.round(picker.rgb[0]) + ', ' +  Math.round(picker.rgb[1]) + ', ' + Math.round(picker.rgb[2]);
       </script>
